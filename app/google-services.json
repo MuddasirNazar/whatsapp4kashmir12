@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "176319262587",
+    "firebase_url": "https://whatsapp4kashmir.firebaseio.com",
+    "project_id": "whatsapp4kashmir",
+    "storage_bucket": "whatsapp4kashmir.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:176319262587:android:21524dbb16cd92f3",
+        "android_client_info": {
+          "package_name": "com.muddasir.whatsapp4kashmir"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "176319262587-9simhii3lqaa4gbavno1h6hi332ub33u.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.muddasir.whatsapp4kashmir",
+            "certificate_hash": "3a3eeb36d156f469d7ba24f73dcfd1a19a699098"
+          }
+        },
+        {
+          "client_id": "176319262587-odpclk2ig66lqjpua2csoi6v1opfk73g.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCmiZRgxbBUVV_we7olZBwOhoIvfQdTsWQ"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "176319262587-odpclk2ig66lqjpua2csoi6v1opfk73g.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
