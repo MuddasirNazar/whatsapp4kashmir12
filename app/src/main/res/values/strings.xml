@@ -15,6 +15,10 @@
     <string name="error_field_required">This field is required</string>
     <string name="CreateAccount">createAccount</string>
     <string name="login">login</string>
+    <string name="already">Already Have Account</string>
+    <string name="logout">Logout</string>
+    <string name="logoutbutton"> logoutbutton</string>
+    <string name="cret">Create Account</string>
     <string name="permission_rationale">"Contacts permissions are needed for providing email
         completions."
     </string>

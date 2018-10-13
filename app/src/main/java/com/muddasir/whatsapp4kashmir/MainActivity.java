@@ -6,9 +6,12 @@ import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
+import android.view.Menu;
+import android.view.MenuItem;
 
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
+import com.google.firebase.database.DatabaseReference;
 
 
 public class MainActivity extends AppCompatActivity {
@@ -17,6 +20,8 @@ public class MainActivity extends AppCompatActivity {
     private ViewPager myviewPager;
     private TabLayout mytabLayout;
     private   TabsAccesAdapter mytabsAccesAdapter;
+
+    private DatabaseReference  storeUserDefaultRefrence;
 
     private FirebaseUser  firebaseUser;
 
@@ -46,13 +51,39 @@ public class MainActivity extends AppCompatActivity {
 
         if(firebaseUser==null)
         {
-            sendUserToLoginActivity();
+            logoutUser();
         }
     }
 
-    public void sendUserToLoginActivity()
+    public void logoutUser()
     {
         Intent loginActivity=new Intent(MainActivity.this,LoginActivity.class);
        startActivity(loginActivity);
+    }
+
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+         super.onCreateOptionsMenu(menu);
+
+        getMenuInflater().inflate(R.menu.menu_bar,menu);
+        return true;
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        super.onOptionsItemSelected(item);
+        if(item.getItemId()==R.id.logoutButton)
+        {
+      mauth.signOut();
+      logoutUser();
+
+        }
+        else
+        {
+            Intent loginActivity=new Intent(MainActivity.this,AccountSetting.class);
+            startActivity(loginActivity);
+        }
+        return true;
     }
 }
